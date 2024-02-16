@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     --cor1: #D9DB49;    
     --cor2: #DDDE1A;
@@ -9,6 +11,8 @@
     --cor4: #DBA700;
 
     --font1:"Inter", sans-serif;
+
+    --font2:"Poppins", sans-serif;;
 }
 
 html , body{
@@ -23,9 +27,9 @@ html , body{
 .container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 5rem 85vh 5vh;
+    grid-template-rows: 5rem 85vh 20vh 5vh;
 
-    grid-template-areas: "h h" "m m" "f f";
+    grid-template-areas: "h h" "m m" "a a" "f f";
 
     height: 100%;
     width: 100%;
@@ -105,13 +109,70 @@ header{
 
 main{
     background-color: white;
-
-    
     grid-area: m;
 }
+
+main section.topo{
+    padding: 1rem;
+    font-size: .8rem;
+    text-indent: 1rem;
+    line-height: 1.3rem;
+}
+
+main section.topo > h1{
+    text-align: center;
+}
+
+main section.topo > p{
+    text-align: justify;
+}
+
+main section.topo > div.button{
+    display: block;
+    margin-top: 2rem;
+    text-indent: unset;
+    text-align: center;
+}
+
+main section.topo > div.button > a{
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+main section.topo > div.button > a:hover{
+    background-color: var(--cor1);
+
+}
+
+section.image{
+    background: #D9DB49 url(../imagens/fundo-main.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 400px;
+}
+
+section.image > p{
+    font-family: var(--font2);
+    font-weight: 900;
+    font-size: 4rem;
+    color:white;
+    margin: 10px;
+
+    text-align: center;
+}
+
 aside{
     background-color: yellow;
-    display: none;
+    display: block;
     
     grid-area: a;
 }
