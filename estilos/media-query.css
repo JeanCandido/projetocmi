@@ -53,5 +53,6 @@
         flex-direction: row;
         top: unset;
         right: 100px;
+        gap: 1rem;
     }
 }

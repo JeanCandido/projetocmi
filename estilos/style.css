@@ -66,16 +66,19 @@ header{
     list-style-type: none;
     display: none;
     flex-direction: column;
-    gap: .5rem;
+    padding: 1rem;
     position: absolute;
     top: 4rem; /* Ajuste a distância vertical conforme necessário */
     right: 0px;
     z-index: 9999;
+    text-align: center;
+    border-radius: 0px 0px 0px 20px;
 }
 
 .header ul > li > a{
     color: white;
     text-decoration: none;
+    line-height: 2rem;
 }
 
 .header ul > li > a:hover{
@@ -84,7 +87,7 @@ header{
 }
 
 .header > nav > .menu{
-    width: 4rem;
+    width: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
