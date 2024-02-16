@@ -44,6 +44,10 @@
 }
 
 @media screen and (min-width: 992px) {
+    .header > nav > ul{
+        animation: unset;
+    }
+    
     nav > .menu > i{
         display: none;
     }
