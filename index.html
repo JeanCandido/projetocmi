@@ -8,10 +8,30 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header">
+            <div class="logo">
+                <img src="https://cmiengenharia.com.br/imagens/logo.png" alt="logo cmi">
+            </div>
+            <nav>
+                <div class="menu" onclick="showMenu()">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </div>
+                <ul id="itens">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Empresa</a></li>
+                    <li><a href="index.html">Serviços</a></li>
+                    <li><a href="index.html">Galeria</a></li>
+                    <li><a href="index.html">Clientes</a></li>
+                    <li><a href="index.html">Informações</a></li>
+                    <li><a href="index.html">Contato</a></li>
+                </ul>
+            </nav>
+        
         </header>
         <main>
 
@@ -23,5 +43,28 @@
 
         </footer>
     </div>
+
+    <script>
+        function showMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var menu = document.getElementById('itens');
+            var screenSize = window.innerWidth;
+
+            if (screenSize > 992) {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+
+
+    </script>
 </body>
 </html>

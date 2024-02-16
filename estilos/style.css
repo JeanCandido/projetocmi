@@ -1,6 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --cor1: #D9DB49;    
+    --cor2: #DDDE1A;
+    --cor3: #DBC200;
+    --cor4: #DBA700;
+
+    --font1:"Inter", sans-serif;
+}
+
 html , body{
+    font-family: var(--font1);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,7 +23,7 @@ html , body{
 .container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-rows: 5rem 85vh 5vh;
 
     grid-template-areas: "h h" "m m" "f f";
 
@@ -19,35 +31,85 @@ html , body{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
 header{
-    background-color: blue;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
 
     grid-area: h;
 }
+
+.header > .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header > .logo > img{
+    height: 80%;
+    margin: 1rem 1rem;
+}
+
+.header > nav{
+    display: flex;
+    align-items: center;
+
+}
+
+.header .menu{
+    position: relative;
+}
+
+.header > nav > ul{
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+    position: absolute;
+    top: 4rem; /* Ajuste a distância vertical conforme necessário */
+    right: 0px;
+    z-index: 9999;
+}
+
+.header ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.header ul > li > a:hover{
+    background-color: var(--cor1);
+    color: black;
+}
+
+.header > nav > .menu{
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header > nav > .menu  > i {
+    color: white;
+
+}
+
 main{
-    background-color: green;
+    background-color: white;
 
     
     grid-area: m;
 }
 aside{
     background-color: yellow;
-
+    display: none;
     
     grid-area: a;
 }
 footer{
-    background-color: red;
+    background-color: var(--cor2);
 
     
     grid-area: f;

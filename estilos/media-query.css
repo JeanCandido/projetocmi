@@ -6,26 +6,52 @@
     }
 
     header{
-        background-color: blue;
+        background-color: black;
     
         grid-area: h;
     }
+    
+    .header > .logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    
+    .header > .logo > img{
+        height: 80%;
+        margin-top: 1rem;
+    }
+    
     main{
-        background-color: green;
+        background-color: white;
     
         
         grid-area: m;
     }
     aside{
         background-color: yellow;
-    
+        display: block;
         
         grid-area: a;
     }
     footer{
-        background-color: red;
+        background-color: var(--cor2);
     
         
         grid-area: f;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav > .menu > i{
+        display: none;
+    }
+
+    nav > ul#itens {
+        display: flex;
+        flex-direction: row;
+        top: unset;
+        right: 100px;
     }
 }
