@@ -6,6 +6,10 @@
         width: 10rem;
     }
 
+    .header > nav > ul{
+        top: 3rem;
+    }
+
     main section.topo{
         padding: 2rem;
         font-size: 1rem;
