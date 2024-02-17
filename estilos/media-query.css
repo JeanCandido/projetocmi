@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+:root{
+    --cor1: #D9DB49;    
+    --cor2: #DDDE1A;
+    --cor3: #DBC200;
+    --cor4: #8e6d00;
+    --cor5: #0015ff52;
+
+    --font1:"Inter", sans-serif;
+
+    --font2:"Poppins", sans-serif;;
+}
+
 @media screen and (max-width: 500px){
 
     .header > .logo > img {
@@ -91,10 +103,7 @@
         margin-top: 1rem;
     }
     
-    main{
-        background-color: white;
-    
-        
+    main{ 
         grid-area: m;
     }
 
@@ -124,7 +133,6 @@
     }
 
     aside{
-        background-color: rgb(255, 255, 255);
         display: block;
 
         grid-area: a;

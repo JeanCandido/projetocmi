@@ -9,6 +9,7 @@
     --cor2: #DDDE1A;
     --cor3: #DBC200;
     --cor4: #8e6d00;
+    --cor5: #0015ff52;
 
     --font1:"Inter", sans-serif;
 
@@ -20,8 +21,7 @@ html , body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+
 }
 
 .container{
@@ -30,9 +30,6 @@ html , body{
     grid-template-rows: auto auto auto auto;
 
     grid-template-areas: "h h" "m m" "a a" "f f";
-
-    height: 100%;
-    width: 100%;
 }
 
 header{
@@ -113,7 +110,7 @@ main{
 }
 
 main section.topo{
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     font-size: .8rem;
     text-indent: 1rem;
     line-height: 1.3rem;
@@ -155,8 +152,6 @@ section.image{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
-
     width: 100%;
     height: 400px;
 }
@@ -187,10 +182,8 @@ main section.meio > h1{
 
 
 aside{
-    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.458);
     display: block;
-    border: 1px solid rgba(128, 128, 128, 0.433);
-    
     grid-area: a;
 }
 
