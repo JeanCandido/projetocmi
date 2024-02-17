@@ -1,11 +1,42 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 500px){
+@media screen and (max-width: 500px){
     main section.topo{
         padding: 2rem;
         font-size: 1rem;
         text-indent: 1rem;
         line-height: 1.5rem;
+    }
+
+    main section.image p{
+        font-size: 2rem;
+    }
+
+    main section.topo > div.button > a{
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: .5rem;
+        text-decoration: none;
+    }
+
+    .itens{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5vw;
+    }
+
+    .itens > .item-group > .item >a > img{
+        width: 4rem;
+        height: 4rem;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+    
+    .itens > .item-group > .item >a.p{
+        font-size: .7rem;
+        text-decoration: none;
+        color: black;
     }
 }
 
@@ -36,13 +67,6 @@
         
         grid-area: m;
     }
-
-    footer{
-        background-color: var(--cor2);
-    
-        
-        grid-area: f;
-    }
 }
 
 @media screen and (min-width: 992px) {
@@ -68,7 +92,23 @@
     aside{
         background-color: rgb(255, 255, 255);
         display: block;
-        
+
         grid-area: a;
+    }
+
+    .itens{
+        gap: 0px;
+    }
+
+    .itens > .item-group{
+        margin: 0;
+        padding: 0;
+    }
+
+    .itens > .item-group > .item >a > img{
+        width: 16rem;
+        height: 16rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
     }
 }

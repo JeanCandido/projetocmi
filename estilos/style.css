@@ -27,7 +27,7 @@ html , body{
 .container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 5rem 100rem 20vh 5vh;
+    grid-template-rows: auto auto auto auto;
 
     grid-template-areas: "h h" "m m" "a a" "f f";
 
@@ -51,7 +51,7 @@ header{
 }
 
 .header > .logo > img{
-    height: 40%;
+    width: 20rem;
     margin: 1rem 1rem;
 }
 
@@ -121,6 +121,10 @@ main section.topo{
 
 main section.topo > h1{
     text-align: center;
+}
+
+main section.topo > p{
+    text-align: justify;
 }
 
 main section.topo > div.button{
@@ -198,21 +202,44 @@ aside{
 
 .itens > .item-group > .item {
     width: 28vw;
+    text-align: center;
 }
 
-.itens > .item-group > .item >a.img{
-    display: none;
+.itens > .item-group > .item >a > img{
+    width: 8rem;
+    height: 8rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+    border-radius: 5px;
 }
 
-.itens > .item-group > .item >a.{
-
+.itens > .item-group > .item >a.p{
+    text-decoration: none;
+    color: black;
 }
 
 footer{
-    background-color: var(--cor2);
+    background-color: black;
 
     
     grid-area: f;
+}
+
+footer .logo-footer{
+    padding: 1rem;
+}
+
+footer .contato #whatsapp{
+    color: white;
+}
+
+footer .contato #whatsapp{
+    color: white;
+}
+
+footer .contato #whatsapp{
+    color: white;
 }
 
 
