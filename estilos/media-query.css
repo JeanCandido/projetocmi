@@ -175,10 +175,10 @@
     }
 
     .itens > .item-group > .item >a > img{
-        width: 16rem;
-        height: 16rem;
+        width: 14rem;
+        height: 14rem;
         margin-top: 1rem;
-        margin-left: 1rem;
+        margin-left: 0rem;
     }
 }
 
