@@ -118,10 +118,15 @@ main section.topo{
 
 main section.topo > h1{
     text-align: center;
+
+    font-size: 1rem;
+    line-height: 2rem;
 }
 
 main section.topo > p{
     text-align: justify;
+
+    font-size: .8rem;
 }
 
 main section.topo > div.button{
@@ -202,6 +207,7 @@ main section.meio > h1{
 }
 
 aside{
+    background-color: var(--cor2);
     border: 1px solid rgba(128, 128, 128, 0.458);
     display: block;
     grid-area: a;
@@ -218,6 +224,7 @@ aside{
     text-align: center;
 }
 
+
 .itens > .item-group > .item >a > img{
     width: 8rem;
     height: 8rem;
@@ -225,6 +232,15 @@ aside{
     margin-left: 1rem;
 
     border-radius: 5px;
+
+    transition: transform .5s;
+    transform: translate(0, 0);
+
+}
+
+.itens > .item-group > .item >a > img:hover{
+    transform: translate(5px, -5px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.434);
 }
 
 .itens > .item-group > .item >a.p{

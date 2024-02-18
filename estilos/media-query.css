@@ -94,6 +94,15 @@
     footer {
         font-size: .75rem;
     }
+
+    section.topo h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    section.topo p{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -115,10 +124,6 @@
     .header > .logo > img{
         height: 80%;
         margin-top: 1rem;
-    }
-    
-    main{ 
-        grid-area: m;
     }
 
     footer{
@@ -156,6 +161,19 @@
         flex-direction: row;
         top: unset;
         gap: 1rem;
+    }
+
+    section.topo h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    section.topo p{
+        font-size: 1.2rem;
+    }
+
+    section.image{
+        height: 600px;
     }
 
     aside{
