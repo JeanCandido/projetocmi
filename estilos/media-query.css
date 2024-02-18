@@ -24,7 +24,7 @@
 
     main section.topo{
         padding: 2rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-indent: 1rem;
         line-height: 1.5rem;
     }
@@ -35,14 +35,6 @@
 
     section#experiencia > p{
         font-size: 2rem;
-    }
-
-    main section.topo > div.button > a{
-        color: black;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: .5rem;
-        text-decoration: none;
     }
 
     .itens{
@@ -96,7 +88,7 @@
     }
 
     section.topo h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 2rem;
     }
 
@@ -161,15 +153,6 @@
         flex-direction: row;
         top: unset;
         gap: 1rem;
-    }
-
-    section.topo h1{
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
-    section.topo p{
-        font-size: 1.2rem;
     }
 
     section.image{

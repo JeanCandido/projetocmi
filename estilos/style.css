@@ -101,52 +101,29 @@ header{
 
 .header > nav > .menu  > i {
     color: white;
-
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     grid-area: m;
+    align-items: center;
 }
 
 main section.topo{
-    padding: 1rem 1rem 2rem 1rem;
-    font-size: .8rem;
+    padding: 1rem;
     text-indent: 1rem;
     line-height: 1.3rem;
 }
 
 main section.topo > h1{
     text-align: center;
-
-    font-size: 1rem;
     line-height: 2rem;
 }
 
 main section.topo > p{
     text-align: justify;
-
-    font-size: .8rem;
-}
-
-main section.topo > div.button{
-    display: block;
-    margin-top: 2rem;
-    text-indent: unset;
-    text-align: center;
-}
-
-main section.topo > div.button > a{
-    color: black;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-main section.topo > div.button > a:hover{
-    background-color: var(--cor1);
-
 }
 
 section.image{
@@ -195,15 +172,43 @@ section#experiencia{
 }
 
 main section.meio{
-    padding: 1rem;
-    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     text-indent: 1rem;
-    line-height: 1.3rem;
     background-color: var(--cor2);
+    width: 100%;
 }
 
 main section.meio > h1{
     text-align: center;
+    padding: 0rem 1rem;
+}
+
+main section.meio > p{
+    text-align: justify;
+    padding: 0rem 1rem;
+}
+
+main section.sobre{
+    padding: 1rem;
+    text-indent: 1rem;
+    line-height: 1.3rem;
+
+}
+
+main section.sobre > h1{
+    text-align: center;
+    line-height: 2rem;
+}
+
+main section.sobre > p{
+    text-align: justify;
+}
+
+section.sobre, section.topo, section.meio > h1, section.meio > p{
+    max-width: 800px;
 }
 
 aside{
