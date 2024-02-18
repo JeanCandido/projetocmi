@@ -29,7 +29,11 @@
         line-height: 1.5rem;
     }
 
-    main section.image p{
+    section#cmi > p{
+        font-size: 2rem;
+    }
+
+    section#experiencia > p{
         font-size: 2rem;
     }
 
@@ -74,6 +78,16 @@
             height: 48px;
         }
     }
+
+    @keyframes experiencia{
+        0%{
+            height: 0px;
+            opacity: 0;
+        }
+        100%{
+            height: 96px;
+        }
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -109,6 +123,18 @@
 
     footer{
         font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 785px) and (max-width: 991px) {
+    @keyframes experiencia{
+        0%{
+            height: 0px;
+            opacity: 0;
+        }
+        100%{
+            height: 64px;
+        }
     }
 }
 
@@ -152,5 +178,17 @@
         height: 16rem;
         margin-top: 1rem;
         margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 1092px) {
+    @keyframes experiencia{
+        0%{
+            height: 0px;
+            opacity: 0;
+        }
+        100%{
+            height: 64px;
+        }
     }
 }
