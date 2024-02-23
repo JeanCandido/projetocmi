@@ -213,7 +213,7 @@ section.sobre, section.topo, section.meio > h1, section.meio > p{
 
 aside{
     background-color: var(--cor2);
-    border: 1px solid rgba(128, 128, 128, 0.458);
+    
     display: block;
     grid-area: a;
 }
