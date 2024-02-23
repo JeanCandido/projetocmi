@@ -22,6 +22,10 @@
         top: 3rem;
     }
 
+    main{
+        margin-top: 66px;
+    }
+
     main section.topo{
         padding: 2rem;
         font-size: 0.8rem;

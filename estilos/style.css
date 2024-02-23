@@ -38,6 +38,9 @@ header{
     justify-content: space-between;
 
     grid-area: h;
+
+    position: fixed;
+    width: 100%;
 }
 
 .header > .logo {
@@ -109,6 +112,7 @@ main{
     background-color: white;
     grid-area: m;
     align-items: center;
+    margin-top: 100px;
 }
 
 main section.topo{
@@ -120,10 +124,12 @@ main section.topo{
 main section.topo > h1{
     text-align: center;
     line-height: 2rem;
+    margin-top: 0px;
 }
 
 main section.topo > p{
     text-align: justify;
+    margin-bottom: 0px;
 }
 
 section.image{
@@ -327,7 +333,7 @@ footer .contato #email{
         opacity: 0;
     }
     100%{
-        height: 14rem;
+        height: 12rem;
     }
 }
 
