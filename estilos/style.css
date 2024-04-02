@@ -141,7 +141,7 @@ section.image{
     height: 400px;
 }
 
-section#cmi > p{
+section#cmi > p, section#experiencia > p{
     font-family: var(--font2);
     font-weight: 900;
     font-size: 2.8rem;
@@ -149,26 +149,13 @@ section#cmi > p{
     padding: 1rem;
 
     text-align: center;
-
-    animation: logo-cmi 1s ease-in-out;
+    visibility: hidden;
 }
 
 section#cmi{
     background: url(../imagens/fundo-main.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-}
-
-section#experiencia > p{
-    font-family: var(--font2);
-    font-weight: 900;
-    font-size: 2.8rem;
-    color:white;
-    padding: 1rem;
-
-    text-align: center;
-
-    animation: experiencia 1s ease-in-out;
 }
 
 section#experiencia{
@@ -334,25 +321,4 @@ footer .contato #email{
     100%{
         height: 12rem;
     }
-}
-
-@keyframes logo-cmi{
-    0%{
-        height: 0px;
-        opacity: 0;
-    }
-    100%{
-        height: 64px;
-    }
-}
-
-@keyframes experiencia{
-    0%{
-        height: 0px;
-        opacity: 0;
-    }
-    100%{
-        height: 137px;
-    }
-    
 }

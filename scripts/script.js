@@ -19,3 +19,21 @@ window.addEventListener('resize', function() {
         menu.style.display = 'none';
     }
 });
+
+window.sr = ScrollReveal({ reset: true })
+
+sr.reveal('.reveal-1', {
+    duration: 1000,
+    distance: '100px',
+    origin: 'bottom',
+    easing: 'ease-in-out',
+})
+
+sr.reveal('.reveal-2', 
+{
+    duration: 1000,
+    distance: '100px',
+    origin: 'bottom',
+    easing: 'ease-in-out',
+}
+)
