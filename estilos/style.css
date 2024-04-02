@@ -78,7 +78,7 @@ header{
     text-align: center;
     border-radius: 0px 0px 0px 20px;
 
-    animation: up .5s;
+    animation: up .2s;
 }
 
 .header ul > li > a{
@@ -91,7 +91,7 @@ header{
 .header ul > li > a:hover{
     background-color: var(--cor1);
     color: black;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .header > nav > .menu{
