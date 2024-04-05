@@ -20,6 +20,8 @@ window.addEventListener('resize', function() {
     }
 });
 
+//ScrollReveal
+
 window.sr = ScrollReveal({ reset: true })
 
 sr.reveal('.reveal-1', {
@@ -38,6 +40,8 @@ sr.reveal('.reveal-2',
 }
 )
 
+//Slide
+
 let radio = document.querySelector('.manual-btn')
 let cont = 1
 
@@ -45,7 +49,7 @@ document.getElementById('radio1').checked = true
 
 setInterval(() => {
     proximaImg()
-}, 5000)
+}, 10000)
 
 function proximaImg(){
     cont++

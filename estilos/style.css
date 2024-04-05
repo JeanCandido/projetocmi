@@ -132,6 +132,12 @@ main section.topo > p{
     margin-bottom: 0px;
 }
 
+.space{
+    height: 2rem;
+    width: 100%;
+    background-color: var(--cor1);
+}
+
 section.image{
     background: #D9DB49;
     display: flex;

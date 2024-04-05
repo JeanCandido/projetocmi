@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+:root{
+    --cor1: #D9DB49;    
+    --cor2: #DDDE1A;
+    --cor3: #DBC200;
+    --cor4: #8e6d00;
+    --cor5: #0015ff52;
+
+    --font1:"Inter", sans-serif;
+
+    --font2:"Poppins", sans-serif;;
+}
+
 body, html{
     margin: 0;
 }
@@ -10,12 +22,12 @@ body, html{
     height: auto;
     padding: 0 !important;
     overflow: hidden;
+    background-color: var(--cor1);
 }
 
 .slider-content{
     width: 400%;
-    height: auto;
-    max-height: 400px;
+    height: 640px;
     display: flex;
 }
 
@@ -25,14 +37,19 @@ body, html{
 
 .slide-box{
     width: 25%;
-    height: auto;
+    height: 600px;
     position: relative;
     text-align: center;
     transition: 1s;
 }
 
 .slide-box img{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 2rem;
     height: 100%;
+    object-fit: cover;
 }
 
 .nav-auto, .nav-manual{
@@ -40,10 +57,12 @@ body, html{
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-top: 635px;
+    margin-left: -100px;
 }
 
 .nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid #ff0054;
+    border: 1px solid var(--cor4);
     padding:10px;
     border-radius: 50%;
     cursor: pointer;
@@ -54,11 +73,11 @@ body, html{
 }
 
 .nav-manual .manual-btn:hover{
-    background-color: #ff0054;
+    background-color: var(--cor4);
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: #ff0054;
+    background-color: var(--cor4);
     transition: 0.2s;
 }
 
@@ -74,14 +93,25 @@ body, html{
     margin-left: -50%;
 }
 
-@media screen and (max-width:900px) {
-    .img-desktop{
-        display: none;
+@media screen and (max-width:1200px) {
+    .slide-box img{
+        max-width: 75%;
     }
-    .img-mobile{
-        display: block;
+}
+@media screen and (max-width:992px) {
+    .nav-auto, .nav-manual{   
+        margin-left: 0px;
     }
-    .nav-auto, .nav-manual{
-        margin-top: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .slider-content{
+        height: 320px;
+    }
+    .slide-box img{
+        height: 300px;
+    }
+    .nav-auto, .nav-manual{   
+        margin-top: 325px;
     }
 }
