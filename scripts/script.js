@@ -60,3 +60,9 @@ function proximaImg(){
 
     document.getElementById('radio'+cont).checked = true
 }
+
+//URL
+
+if (window.location.href.endsWith('.html')) {
+    window.location.replace(window.location.href.replace('.html', ''));
+}
