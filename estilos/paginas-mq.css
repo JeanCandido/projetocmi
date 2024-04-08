@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #D9DB49;    
+    --cor2: #DDDE1A;
+    --cor3: #DBC200;
+    --cor4: #8e6d00;
+    --cor5: #0015ff52;
+
+    --font1:"Inter", sans-serif;
+
+    --font2:"Poppins", sans-serif;;
+}
+
+@media screen and (max-width: 500px){
+
+    .header > .logo > img {
+        width: 10rem;
+    }
+
+    .header > nav > ul{
+        top: 3rem;
+    }
+
+    
+    footer .contato{
+        gap: 0.5rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    footer {
+        font-size: .75rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+
+    header{
+        background-color: black;
+    
+        grid-area: h;
+    }
+    
+    .header > .logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    
+    .header > .logo > img{
+
+        margin-top: 1rem;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        grid-template-columns: 4fr 200px;
+        grid-template-areas: "h h" "m a" "m a" "f f";
+    }
+
+    .header > nav > ul{
+        animation: unset;
+    }
+    
+    nav > .menu > i{
+        display: none;
+    }
+
+    nav > ul#itens {
+        display: flex;
+        flex-direction: row;
+        top: unset;
+        gap: 1rem;
+    }
+}
