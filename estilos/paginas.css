@@ -95,11 +95,17 @@ header{
 .header > nav > .menu  > i {
     color: white;
 }
-
 main{
     padding-top: 6.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #666666;
+}
+
+main h1{
+    color: black;
 }
 
 .conteudo{

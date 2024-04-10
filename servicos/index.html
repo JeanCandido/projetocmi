@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../estilos/paginas.css">
+    <link rel="stylesheet" href="../estilos/paginas-mq.css">
+
+    <script src="../scripts/script-paginas.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>CMI || Sobre a CMI</title>
+
+    <style>
+        :root{
+            --cor1: #D9DB49;    
+            --cor2: #DDDE1A;
+            --cor3: #DBC200;
+            --cor4: #8e6d00;
+            --cor5: #0015ff52;
+
+            --font1:"Inter", sans-serif;
+
+            --font2:"Poppins", sans-serif;;
+        }
+
+        main{
+            padding-top: 6.5rem;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .sub-titulo{
+            font-size: 15pt;
+        }
+
+        .servicos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            padding: 1rem;
+            place-items: center;
+
+            width: calc(100% - 2rem);
+            background-color: var(--cor2);
+        }
+        .servicos > img{
+            width: 180px;
+            height: 200px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../imagens/logo.png" alt="logo cmi">
+        </div>
+        <nav>
+            <div class="menu" onclick="showMenu()">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+            <ul id="itens">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../empresa">Empresa</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Clientes</a></li>
+                <li><a href="">Informações</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h1>SERVIÇOS</h1>
+            <h2 class="center">Elevadores</h2>
+            <p>Todo o nosso serviço é confeccionado com material de primeira qualidade, além de trabalharmos com equipamentos de última geração, garantindo aos nossos clientes maior qualidade em nossos serviços. Além da instalação, oferecemos manutenção dos equipamentos.</p>
+            <h2 class="sub-titulo">A CMI ENGENHARIA DISPONIBILIZA VÁRIOS ITENS PARA LOCAÇÃO E VENDA, ATENDENDO ÀS NECESSIDADES DE TODO TIPO DE OBRA:</h2>
+            <ul>
+                <li>Elevadores à Cabo, Cremalheira e Minigrua;</li>
+                <li>Escoramento;</li>
+                <li>Estrutura Tubular;</li>
+                <li>Fachadeiros e Andaimes.</li>
+            </ul>
+            <h2 class="sub-titulo">TEMOS AINDA UMA VASTA RELAÇÃO DE SERVIÇOS QUE OFERECEMOS, COM PROFISSIONAIS TREINADOS E CAPACITADOS:</h2>
+            <ul>
+                <li>Manutenção avulsa e mensal;</li>
+                <li>Teste de freio com manutenção preventiva e corretiva;</li>
+                <li>Emissão de RT de nosso Engenheiro Mecânico.</li>
+            </ul>
+            <h2 class="sub-titulo">FAZEMOS TAMBÉM REFORMA DE ELEVADORES, CERTIFICADAS PELO NOSSO ENGENHEIRO MECÂNICO, COM REGISTRO NO CREA.</h2>
+            <p>Como diferencial de mercado, oferecemos uma proposta de trabalho totalmente personalizada, de acordo com a necessidade de cada cliente. Em todos os casos, há opção por um plano de manutenção mensal, com um custo muito inferior ao padrão do mercado.</p>
+            <p>Trabalhado dessa maneira, colocamos à disposição de nossos clientes toda liberdade e transparência para desenvolvermos o melhor plano de trabalho com o melhor custo de manutenção preventiva.</p>
+            <p>Solicite um orçamento. Iremos até seu condomíno, empresa, residência ou indústria sem nenhum custo para avaliar seu equipamento e expor nossas alternativas para melhor atendê-lo.</p>
+            <h2 class="center">Elétrica</h2>
+            <ul>
+                <li>Projetos Elétricos;</li>
+                <li>Automação Industrial;</li>
+                <li>Montagem de Painéis;</li>
+                <li>Manutenção Preventiva e Corretiva;</li>
+                <li>Contrato de Prestação de Serviços;</li>
+                <li>Elétrica Industrial;</li>
+                <li>Elétrica em Geral.</li>
+            </ul>
+        </section>
+
+        <section class="servicos">
+            <img src="https://cmiengenharia.com.br/imagens/informacoes/aluguel-elevador-cremalheira-01.jpg" alt="serviço cmi">
+            <img src="https://cmiengenharia.com.br/imagens/informacoes/aluguel-elevadores-construcao-civil-01.jpg" alt="serviços cmi">
+            <img src="https://cmiengenharia.com.br/imagens/informacoes/elevador-cremalheira-01.jpg" alt="servicos cmi">
+            <img src="https://cmiengenharia.com.br/imagens/informacoes/elevador-cremalheira-usado-01.jpg" alt="servicos cmi">
+            <img src="https://cmiengenharia.com.br/imagens/informacoes/mini-grua-01.jpg" alt="servicos cmi">
+            <img src="https://cmiengenharia.com.br/imagens/informacoes/venda-elevadores-cremalheira-01.jpg" alt="servicos cmi">
+        </section>
+    </main>
+
+    <footer>
+        <div class="local">
+            <h3>CMI-Engenharia Montagem Industiral</h3>
+            <address>Rua Emilia Serra Otranto - N°30 - CHACARAS SAO MARTINHO - Campinas-SP - CEP: 13042-834</address>
+        </div>   
+
+        <div class="contato">
+            <div id="whatsapp">
+                <a href="https://wa.me/5519982135603?text=oi">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            <div id="telefone">
+                <a href="tel:+5519982135603">
+                    <i class="fa-sharp fa-solid fa-phone"></i>
+                </a>
+            </div>
+            <div id="email">
+                <a href="mailto:email@provedor.com.br?subject=CMI Enganharia&cc=copia@provedor.com.br&bcc=copiaoculta@provedor.com.br&body=Quero fazer um orçamento de um elevador">
+                    <i class="fa-sharp fa-regular fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
