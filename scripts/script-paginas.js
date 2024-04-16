@@ -10,8 +10,8 @@ function showMenu() {
 }
 
 window.addEventListener('resize', function() {
-    var menu = document.getElementById('itens');
-    var screenSize = window.innerWidth;
+    let menu = document.getElementById('itens');
+    let screenSize = window.innerWidth;
 
     if (screenSize > 992) {
         menu.style.display = 'flex';
