@@ -49,7 +49,7 @@ document.getElementById('radio1').checked = true
 
 setInterval(() => {
     proximaImg()
-}, 10000)
+}, 5000)
 
 function proximaImg(){
     cont++
@@ -60,3 +60,20 @@ function proximaImg(){
 
     document.getElementById('radio'+cont).checked = true
 }
+
+function moveLeft(){
+    cont--;
+    if(cont < 1){
+        cont = 3;
+    }
+    document.getElementById('radio'+cont).checked = true;
+}
+
+function moveRight(){
+    cont++;
+    if(cont > 3){
+        cont = 1;
+    }
+    document.getElementById('radio'+cont).checked = true;
+}
+

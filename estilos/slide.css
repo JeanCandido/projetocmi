@@ -16,6 +16,7 @@ body, html{
     margin: 0;
 }
 
+
 .slider{
     margin: 0 auto;
     width: 100%;
@@ -44,7 +45,7 @@ body, html{
 }
 
 .slide-box img{
-    width: 100%;
+    width: 50%;
     max-width: 800px;
     padding: 20px;
     border-radius: 2rem;
@@ -93,6 +94,37 @@ body, html{
     margin-left: -50%;
 }
 
+.btn-move-left, .btn-move-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: -335px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: var(--cor4);
+    width: 40px;
+    height: 60px;
+    color: var(--cor1);
+}
+.btn-move-right{
+    right: 0px;
+}
+@media screen and (min-width:1200px) {
+    .slider-content{
+        height: 800px;
+    }
+    .slide-box img{
+        height: 780px;
+    }
+    .nav-auto, .nav-manual{   
+        margin-top: 805px;
+    }
+
+    .btn-move-left, .btn-move-right{
+        margin-top: -415px;
+    }
+}
+
 @media screen and (max-width:1200px) {
     .slide-box img{
         max-width: 75%;
@@ -113,5 +145,21 @@ body, html{
     }
     .nav-auto, .nav-manual{   
         margin-top: 325px;
+    }
+
+    .btn-move-left, .btn-move-right{
+        margin-top: -165px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .btn-move-left, .btn-move-right{
+      margin: -165px 5px 0px 5px;  
+    }
+}
+
+@media screen and (max-width: 380px){
+    .btn-move-left, .btn-move-right{
+        width: 30px;
     }
 }
