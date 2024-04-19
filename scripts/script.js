@@ -77,3 +77,8 @@ function moveRight(){
     document.getElementById('radio'+cont).checked = true;
 }
 
+
+function radioChecked(n){
+    cont = n
+    document.getElementById('radio'+cont).checked = true;
+}
