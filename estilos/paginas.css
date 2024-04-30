@@ -108,6 +108,24 @@ main h1{
     color: black;
 }
 
+.caminho{
+    max-width: 1000px;
+    width: calc(100% - 4rem);
+    padding: 0px 2rem 0px 2rem;
+}
+
+.pastas > p > a{
+    text-decoration: none;
+    color: #666666;
+    padding: 4px;
+}
+
+.pastas > p > a:hover{
+    background-color: var(--cor2);
+    color: black;
+    transition: .2s;
+}
+
 .conteudo{
     max-width: 1000px;
     padding: 0px 2rem 0px 2rem;
